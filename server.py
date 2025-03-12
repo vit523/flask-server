@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify
 import os
 
-app = Flask(__name__)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))  # Render передаёт нужный порт в переменной окружения
+    app.run(host="0.0.0.0", port=port)
 
 @app.route('/')
 def home():
