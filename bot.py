@@ -10,7 +10,7 @@ from google.oauth2 import service_account
 BOT_TOKEN = "7940210585:AAGS1-DLKzezCHHXD2DpQcjn0eYx_oMwrAs"  # Замените на токен из BotFather
 SERVICE_ACCOUNT_FILE = "credentials.json"  # JSON-ключ Google API
 FOLDER_ID = "1YjA4gSFCULp6azLBHEKhLlXTVblqtljD"  # ID папки Google Диска
-WEBHOOK_URL = "http://127.0.0.1:8080/upload_link"  # Адрес Webhook-сервера (замените на ngrok/VPS)
+WEBHOOK_URL = "https://flask-server-xroc.onrender.com/upload_link"  # Адрес Webhook-сервера (замените на ngrok/VPS)
 
 # === НАСТРОЙКА ЛОГИРОВАНИЯ ===
 logging.basicConfig(level=logging.INFO)
